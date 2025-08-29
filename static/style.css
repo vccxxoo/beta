@@ -1,0 +1,93 @@
+* { box-sizing: border-box; }
+body{
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: linear-gradient(180deg,#f3f6fb,#eef2f7);
+  margin:0; padding:40px; display:flex; justify-content:center;
+}
+.container{
+  width:450px; background:#fff; padding:20px; border-radius:12px;
+  box-shadow:0 10px 30px rgba(20,20,50,0.08);
+}
+h1{ margin:0 0 14px; font-size:20px; text-align:center }
+
+.tabs {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #6b7280;
+  border-bottom: 2px solid transparent;
+}
+.tab-btn.active {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+.uploader{ 
+  display:flex; 
+  gap:8px; 
+  justify-content:center; 
+  align-items:center; 
+  margin-bottom:12px; 
+}
+.uploader input[type=file]{ }
+.uploader button, #manualAnalyzeBtn { 
+  background:#2563eb; 
+  color:#fff; 
+  border:none; 
+  padding:8px 12px; 
+  border-radius:8px; 
+  cursor:pointer; 
+  margin-top: 10px;
+}
+.manual-input, .quantity-input {
+  margin-bottom: 12px;
+}
+.manual-input label, .quantity-input label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.manual-input input, .quantity-input input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+.preview img{ 
+  max-width:100%; 
+  border-radius:8px; 
+  margin-top:8px; 
+}
+.result{ 
+  margin-top:14px; 
+  background:#f8fafc; 
+  padding:12px; 
+  border-radius:8px; 
+  min-height:60px; 
+}
+.footer{ 
+  margin-top:10px; 
+  font-size:12px; 
+  color:#6b7280; 
+  text-align:center; 
+}
+.loading {
+  text-align: center;
+  color: #6b7280;
+}
+.error {
+  color: #ef4444;
+}
